@@ -2,7 +2,6 @@
 baseURL = 'http://localhost:1313/'
 languageCode = 'en-us'
 title = 'Modelyo - Confidential Cloud'
-theme = ''
 
 # Disable taxonomies to remove warning (using correct syntax)
 disableKinds = ['taxonomy']
