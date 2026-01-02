@@ -78,20 +78,20 @@
     <canvas id="canvas3d" data-spline="{{ .platform_layers.spline_model }}"></canvas>
     <div style="position: relative; z-index: 10;">
         <h2 class="section-title">{{ .platform_layers.title }}</h2>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-top: 60px;">
-            <div style="display: flex; flex-direction: column; gap: 40px;">
+        <div class="platform-layers-grid">
+            <div class="platform-layers-left">
                 {{ range .platform_layers.layers.left }}
-                <div>
-                    <p style="font-size: 90px; font-weight: 400; color: var(--white); opacity: 0.1; line-height: 1; margin: 0;">{{ .number }}</p>
-                    <p style="font-size: 20px; font-weight: 500; color: var(--white); margin-top: 10px;">{{ .title }}</p>
+                <div class="platform-layer-item">
+                    <p class="platform-layer-number">{{ .number }}</p>
+                    <p class="platform-layer-title">{{ .title }}</p>
                 </div>
                 {{ end }}
             </div>
-            <div style="display: flex; flex-direction: column; gap: 40px; align-items: flex-end;">
+            <div class="platform-layers-right">
                 {{ range .platform_layers.layers.right }}
-                <div style="text-align: right;">
-                    <p style="font-size: 90px; font-weight: 400; color: var(--white); opacity: 0.1; line-height: 1; margin: 0;">{{ .number }}</p>
-                    <p style="font-size: 20px; font-weight: 500; color: var(--white); margin-top: 10px;">{{ .title }}</p>
+                <div class="platform-layer-item platform-layer-item-right">
+                    <p class="platform-layer-number">{{ .number }}</p>
+                    <p class="platform-layer-title">{{ .title }}</p>
                 </div>
                 {{ end }}
             </div>
