@@ -8,6 +8,7 @@ hero:
   cta_text: "Explore the Platform"
   cta_link: "#platform"
   background_image: "/images/heroHomePage.png"
+  mobile_background_image: "/images/heroHomePage-mobile.png"
 
 diagram:
   title: "How It Works"
@@ -160,6 +161,6 @@ footer:
     - "Security & Compliance"
     - "Accessibility"
     - "Status"
-  copyright: "© 2025 Modelyo, Inc. All rights reserved."
+  copyright: "© 2026 Modelyo, Inc. All rights reserved."
   social_image: "/images/2470a87ca38b743dd77bc42f469dd13481402f8b.svg"
 ---
